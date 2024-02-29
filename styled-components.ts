@@ -11,14 +11,25 @@ const theme = {
 };
 
 type Theme = typeof theme;
+// type Theme = {
+//   fontSize: {
+//       default: string;
+//       large: string;
+//       small: string;
+//   };
+//   color: {
+//       primary: string;
+//       secondary: string;
+//   };
+// }
 
-type FontSize = keyof Theme['fontSize'];
-type Color = keyof Theme['color'];
+type FontSize = keyof Theme['fontSize']; // 'default' | 'large' | 'small'
+type Color = keyof Theme['color']; // 'primary' | 'secondary'
 
 // use case:
 interface SelectStyleProps {
-  color: Color;
-  fontSize: FontSize;
+  fontSize: FontSize; // 'default' | 'large' | 'small'
+  color: Color; // 'primary' | 'secondary'
 }
 
 const StyledSelect = styled.select<SelectStyleProps>`
