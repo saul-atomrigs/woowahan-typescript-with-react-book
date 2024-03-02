@@ -47,10 +47,12 @@ const StyledSelect = styled.select<SelectStyleProps>`
 
 ## `useState` hook
 ```ts
-// Definition
+// Type Definition
 type Dispatch<A> = (value: A) => void;
-type SetStateAction<S> = S | ((prevState: S) => S); // 상태 타입 S 또는 이전 상태값을 받아 새로운 상태를 반환하는 함수 (prevState: S => S)
+type SetStateAction<S> =
+  S | ((prevState: S) => S); // 상태 타입 S 또는 이전 상태값을 받아 새로운 상태를 반환하는 함수 (prevState: S => S)
 
+// Definition
 function useState<S>(
   initialState: S | (() => S)
 ): [S, Dispatch<SetStateAction<S>>]; // useState가 반환하는 튜플 [state, setState]
