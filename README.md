@@ -1,7 +1,7 @@
 # woowahan-typescript-with-react-book
 - [With Styled-Components](https://github.com/saul-atomrigs/woowahan-typescript-with-react-book?tab=readme-ov-file#with-styled-components)
 - [useState hook](https://github.com/saul-atomrigs/woowahan-typescript-with-react-book?tab=readme-ov-file#usestate-hook)
-- [useEffect hook](https://github.com/saul-atomrigs/woowahan-typescript-with-react-book/edit/main/README.md#useeffect-hook)
+- [useEffect hook](https://github.com/saul-atomrigs/woowahan-typescript-with-react-book?tab=readme-ov-file#useeffect-hook)
 
 ## With Styled-Components
 ```ts
